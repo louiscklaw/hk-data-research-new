@@ -3,7 +3,10 @@
 set -ex
 
 rm -rf build
+rm -rf node_modules
+
+yarn
 
 yarn build
 
-firebase deploy
+firebase deploy --non-interactive

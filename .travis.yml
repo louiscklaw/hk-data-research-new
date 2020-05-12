@@ -18,6 +18,7 @@ jobs:
       install:
         - curl -sL https://firebase.tools | bash
       script:
+        - yarn
         - yarn build
         - firebase deploy --non-interactive --token $FIREBASE_TOKEN
 
