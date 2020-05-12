@@ -1,0 +1,9 @@
+
+env:
+  global:
+    # FIREABSE_TOKEN
+    - secure: "XxJXaC3VwTIs54my5dpY4Ql6oopJDxe3mjWYNLa3+sHS/td8MOvlnlOzdo2Hv8tXGqd5nYps5+EjMD5N6NL54Ev4U2MXZDuD59uvxsRgfPq13IskQzVd7hK8x3jo8jsSdYI2hIKTlciKwVF9p2/v5kng2yQ+KOS2xGRPKHOfAir58BqCxAZzjzKZ2DMfZSGBTlJN5fqxwlTndSIb1Uf3wiHQalkUb04V/1rrLb0MmWj2hLntPhMViVjmsxG2bdJoPn1QZLSB3nCMKD6po9oKkHVoBEaBEVU9VDDp/hrPnpoCMKhsd6LjNgs06Hs3a5xqrIPbDHpdEbMoXYHYo1PqC0wivPtOvu4u8lBtN2m3TpgXXcb2nncIdy3f0IY+zUY5IavMUKwtDciDScUoiXRYPQSxGEMi6TXapt9seWgJYnnMKg+4EpXlLjM4QKdGYeP0zw3nJ1wrK+DNTGkdDtrrmxHS/NC0L7IzyX1tC24qMU6LqcgWGnkf39g/BQzirOKSQAtVMpIq5chRnV+4k67nr8oi5/4MpVASiEq3FMZLmrnSWhgcHlaYcjHQ6AefA2vnjjU8+xoGJZ5uQv8qA3lqWb9QFyFdQ11/Kx+V9NNzyPI/Hm+O3l/YKWJPLpCcWWX7dGfSZo2W+JgGaei6zXdRmo9eDbCfR50WHHdYUeWf5qc="
+
+scripts:
+  - yarn build
+  - firebase deploy --token $FIREBASE_TOKEN
