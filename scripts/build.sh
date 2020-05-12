@@ -2,11 +2,12 @@
 
 set -ex
 
+# curl -sL https://firebase.tools | bash
+
 rm -rf build
 rm -rf node_modules
 
-yarn
+npm install
+npm run build
 
-yarn build
-
-firebase deploy --non-interactive
+firebase deploy --non-interactive --token $FIREBASE_TOKEN
